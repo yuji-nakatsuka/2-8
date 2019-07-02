@@ -1,0 +1,62 @@
+ /* ブラウザがそれぞれ持っているCSSをリセットするため */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color:#6c6b6b;
+}
+
+.clearfix::after {
+	content:"";
+	display:block;
+	clear:both;
+}
+
+p,h3 {
+	color:black;
+}
+
+.title {
+	margin:10px 0;
+}
+
+main {
+	padding:50px 0;
+}
+
+.boxes {
+	width:960px;
+	margin:0 auto;
+}
+
+.one , .two , .three {
+	position: relative;
+}
+
+.box {
+	float:left;
+	width:300px;
+	border:solid 1px lightgray;
+}
+
+.box:nth-child(1) ,.box:nth-child(2){
+	margin-right:30px;
+}
+
+.inner-box {
+	padding:10px;
+}
+
+.box img{
+	width:280px;
+	height:150px;
+	object-fit: cover;
+	object-position: bottom;
+}
+
+.label {
+	background-color:orange ;
+	position: absolute;
+	color:white;
+	padding:3px;
+}
